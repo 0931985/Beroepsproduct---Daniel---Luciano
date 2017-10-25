@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 
 <BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
@@ -23,19 +24,6 @@
             </items>
         </ChoiceBox>
     </left>
-    <right>
-        <ChoiceBox fx:id="cpuDecisionChoiceBox" prefWidth="150.0" value="cpu_weapon" BorderPane.alignment="CENTER">
-            <items>
-                <FXCollections fx:factory="observableArrayList">
-                    <String fx:value="Rock" />
-                    <String fx:value="Paper" />
-                    <String fx:value="Scissors" />
-                    <String fx:value="Lizard" />
-                    <String fx:value="Spock" />
-                </FXCollections>
-            </items>
-        </ChoiceBox>
-    </right>
     <center>
         <Button mnemonicParsing="false" onAction="#play" text="Play" BorderPane.alignment="CENTER" />
     </center>
@@ -50,4 +38,7 @@
         </menus>
       </MenuBar>
    </top>
+   <right>
+      <TextField fx:id="cpuDecisionTextField" disable = "true" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>

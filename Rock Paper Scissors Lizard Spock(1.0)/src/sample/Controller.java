@@ -41,8 +41,8 @@ public class Controller{
         Random rand = new Random();
 
         int cpuDecisionCalculator = rand.nextInt(5);
+        String strCalculator = Integer.toString(cpuDecisionCalculator);
 
-        String cpuDecision = String.valueOf(cpuDecisionTextField.setText());
         String playerDecision = String.valueOf(this.playerDecisionChoiceBox.getValue());
 
 
@@ -64,26 +64,25 @@ public class Controller{
                 break;
         }
 
-        switch (cpuDecision) {
-            case "Rock":
-                cpuDecision = "0";
+        switch (strCalculator) {
+            case "0":
+                this.cpuDecisionTextField.setText("Rock");;
                 break;
-            case "Paper":
-                cpuDecision = "1";
+            case "1":
+                this.cpuDecisionTextField.setText("Paper");;
                 break;
-            case "Scissors":
-                cpuDecision = "2";
+            case "2":
+                this.cpuDecisionTextField.setText("Scissors");;
                 break;
-            case "Lizard":
-                cpuDecision = "3";
+            case "3":
+                this.cpuDecisionTextField.setText("Lizard");;
                 break;
-            case "Spock":
-                cpuDecision = "4";
+            case "4":
+                this.cpuDecisionTextField.setText("Spock");;
                 break;
         }
 
-        cpuDecisionResult = Integer.parseInt(cpuDecision);
-
+        cpuDecisionResult = Integer.parseInt(strCalculator);
         playerDecisionResult = Integer.parseInt(playerDecision);
 
         System.out.println("Player "  + playerDecisionResult);
