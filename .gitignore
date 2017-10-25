@@ -63,3 +63,8 @@ $RECYCLE.BIN/
 *.lnk
 /build/
 /Application/nbproject/private/
+/Rock paper scissors/nbproject/private/
+/Rock paper scissors/build/
+/Beroepsproduct - Rock Paper Scissors Lizard Spock/nbproject/private/
+/Beroepsproduct - Rock Paper Scissors Lizars Spock/nbproject/private/
+/RPSLS_application/nbproject/private/

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <left>
+        <ChoiceBox fx:id="playerDecisionChoiceBox" prefWidth="150.0" value="player_weapon" BorderPane.alignment="CENTER">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Rock" />
+                    <String fx:value="Paper" />
+                    <String fx:value="Scissors" />
+                    <String fx:value="Lizard" />
+                    <String fx:value="Spock" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+    </left>
+    <right>
+        <ChoiceBox fx:id="cpuDecisionChoiceBox" prefWidth="150.0" value="cpu_weapon" BorderPane.alignment="CENTER">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Rock" />
+                    <String fx:value="Paper" />
+                    <String fx:value="Scissors" />
+                    <String fx:value="Lizard" />
+                    <String fx:value="Spock" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+    </right>
+    <center>
+        <Button mnemonicParsing="false" onAction="#play" text="Play" BorderPane.alignment="CENTER" />
+    </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="settingsMenu" mnemonicParsing="false" text="Settings">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#display_Settings" text="Open Settings" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
