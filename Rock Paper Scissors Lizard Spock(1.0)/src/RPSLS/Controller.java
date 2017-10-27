@@ -21,6 +21,7 @@ public class Controller{
 
     @FXML
     private ChoiceBox<?> playerDecisionChoiceBox;
+
     @FXML
     private TextField cpuDecisionTextField;
 
@@ -39,7 +40,6 @@ public class Controller{
     private int cpuScore = 0;
     private String roundResults;
     private String playerName;
-
 
 
     //Displays the second screen where the round result is shown
@@ -145,6 +145,7 @@ public class Controller{
 
             cpuDecisionResult = Integer.parseInt(strCalculator);
             playerDecisionResult = Integer.parseInt(playerDecision);
+
 
             //Determines the winner
             if (strCalculator.equals(playerDecision)) {
@@ -274,7 +275,6 @@ public class Controller{
                 this.roundResults = ("Lizard poisons Spock. You lose");
                 displayRoundResults();
                 checkScore();
-
             }
 
     }
